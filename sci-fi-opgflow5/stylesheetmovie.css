@@ -1,0 +1,74 @@
+
+.decor{
+    background-color: #03411a;
+}
+.container-scifi-pic {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+.text {
+    flex: 1;
+    padding: 20px;
+    color: #cbcbcb;
+}  
+.image {
+    flex: 1;
+    text-align: center;
+}
+img {
+    padding-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    .text, .image {
+      flex: none; /* Remove flex grow on smaller screens */
+      width: 100%; /* Make items take full width on smaller screens */
+      text-align: left; /* Reset text alignment for smaller screens */
+    }
+  }
+
+.card{
+    margin: 10px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+@media (min-width: 762px) {
+    .mobile-img {
+      display: none;
+    }
+
+    .desktop-img {
+      display: block;
+    }
+    .footer {
+        background-color: #058235;
+        color: #0a4623;
+        padding: 20px 0;
+      }
+    
+      .social-icons {
+        text-align: center;
+      }
+    
+      .social-icons a {
+        color: #01572c;
+        font-size: 24px;
+        margin: 0 10px;
+      }
+  }
+  @media (max-width: 768px) {
+    .mobile-img {
+      display: block;
+    }
+
+    .desktop-img {
+      display: none;
+    }
+  }
